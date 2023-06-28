@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Navbar from "../components/navbar";
+import Navbar from "../../components/navbar";
+import BlogDetail from "./[id]";
 
-import Blogs from "../components/blogs";
 
 const Home = () => {
   return (
@@ -16,7 +16,7 @@ const Home = () => {
       </Head>
 
       <Navbar />
-      <Blogs />
+      <BlogDetail />
      
     </>
   );
