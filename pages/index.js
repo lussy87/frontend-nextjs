@@ -12,7 +12,7 @@ const Home = () => {
           name="description"
           content=""
         />
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
 
       <Navbar />

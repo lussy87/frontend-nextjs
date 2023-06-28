@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/router';
 import Container from '../../components/container';
+import Navbar from '../../components/navbar';
 
 const BlogDetail = () => {
   const router = useRouter();
@@ -51,6 +52,9 @@ const BlogDetail = () => {
   };
 
   return (
+    <>
+    <Navbar />
+
     <Container>
       <div className="flex flex-col gap-10">
         <h1 className="text-3xl font-bold">Detail Blog</h1>
@@ -72,6 +76,7 @@ const BlogDetail = () => {
         )}
       </div>
     </Container>
+    </>
   );
 };
 

@@ -188,7 +188,7 @@ const Users  = () => {
         users.map((user) => (
             <tr
               key={user.id}
-              className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+              className="bg-white border-b dark:bg-gray-600 dark:border-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800"
             >
               <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                 {user.name}
@@ -200,7 +200,7 @@ const Users  = () => {
                 <div className="flex justify-center space-x-2">
                   <button
                     type="button"
-                    className="flex items-center justify-center font-medium text-white bg-blue-500 dark:bg-blue-500 dark:text-blue-500 px-2 py-1 rounded-md hover:bg-blue-600 dark:hover:bg-blue-600"
+                    className="flex items-center justify-center font-medium text-white bg-green-500 dark:bg-green-500 dark:text-white-500 px-2 py-1 rounded-md hover:bg-green-600 dark:hover:bg-green-600"
                     onClick={() => handleEdit(user)}
                   >
                     <FaEdit className="mr-1" />
@@ -208,7 +208,7 @@ const Users  = () => {
                   </button>
                   <button
                     type="button"
-                    className="flex items-center justify-center font-medium text-white bg-blue-500 dark:bg-blue-500 dark:text-blue-500 px-2 py-1 rounded-md hover:bg-blue-600 dark:hover:bg-blue-600"
+                    className="flex items-center justify-center font-medium text-white bg-red-500 dark:bg-red-500 dark:text-white-500 px-2 py-1 rounded-md hover:bg-red-600 dark:hover:bg-red-600"
                     onClick={() => handleDelete(user.id)}
                   >
                     <FaTrash className="mr-1" />
